@@ -632,6 +632,7 @@ require('lazy').setup({
       local servers = {
         ruby_lsp = {},
         ts_ls = {},
+        marksman = {},
       }
 
       -- Ensure the servers and tools above are installed
@@ -649,6 +650,7 @@ require('lazy').setup({
         'rubocop', -- Ruby linter and formatter
         'prettierd', -- Fast Prettier daemon for JS/TS formatting
         'eslint_d', -- Fast ESLint daemon for JS/TS linting
+        'marksman', -- Markdown LSP (links, headings, completions)
       }
 
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
